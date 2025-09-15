@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 62.5%;
+  background-color: rgb(15, 15, 15);
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+}
+
+@keyframes colorChange {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: green; }
+  75% { color: yellow; }
+  100% { color: red; }
+}
+.container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  animation: colorChange 5s infinite;
+  text-shadow: 2px 2px 2px rgb(250, 248, 248);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  max-width: 60rem;
+}
+.search input {
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.search input:focus-visible {
+  outline: 1px solid purple;
+  box-shadow: 0 0 1rem rgba(240, 243, 243, 0.979);
+}
+
+.primary-btn {
+  background: purple;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+.primary-btn:hover {
+  background: rgba(81, 221, 16, 0.788);
+  box-shadow: 0 0 1rem rgba(240, 243, 243, 0.979);
+}
+.primary-btn:active {
+  background: rgba(52, 112, 12, 0.788);
+}
+
+#profileContainer {
+  width: 100%;
+}
+.profile-box {
+  margin: auto;
+  padding: 4rem 2rem;
+  width: 90%;
+  max-width: 78rem;
+  transition: 0.5s ease-in;
+  margin-bottom: 2rem;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(23, 241, 3, 0.979);
+}
+.profile-box:hover {
+  transform: rotate(-2deg) scale(1.01);
+  box-shadow: 0 0 4rem rgba(8, 250, 238, 0.979);
+  transition: 0.5s ease-in;
+}
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+.top-section button {
+  align-self: center;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.left h1 {
+  font-size: 1.6rem;
+}
+
+.avatar {
+  height: 10rem;
+  width: 10rem;
+}
+.avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about {
+  margin: 2rem;
+}
+
+.status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width:500px){
+  .top-section button {
+    font-size: 0.7rem;
+    align-self: self-start;
+  }
+  p{
+   font-size: 1rem;
+  }
+  h3{
+    font-size: 1.6rem;
+  }
+  h2{
+    font-size: 1.9rem;
+  }
+  .search{
+    width: 90%;
+  }
+}

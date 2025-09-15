@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Oswald", sans-serif;
+  height: 100%;
+}
+
+.background {
+  background-image: url("img-1.webp");
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 1rem;
+}
+.container h1 {
+  font-size: 4rem;
+}
+
+.settings {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.settings .fa-cog {
+  font-size: 2rem;
+  color: #fff;
+}
+.settings-content {
+  display: flex;
+  gap: 1rem;
+}
+.settings-content input {
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+}
+.settings-content button {
+  padding: 0.5rem 1rem;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: white;
+}
+.hide {
+  display: none;
+}
+
+.time-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.time-container h2 {
+  line-height: 60px;
+  text-align: center;
+  font-size: 3rem;
+}
+.time-container div {
+  font-size: 4rem;
+  color: rgba(0, 255, 213, 0.651);
+  text-shadow: 2px 3px 4px rgb(20, 112, 20);
+}
+
+h2,
+h1 {
+  color: #fff;
+  text-shadow: 2px 3px 5px rgb(24, 5, 92);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .container h1 {
+    font-size: 3.5rem;
+  }
+
+  .time-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .time-container div {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+
+  .settings-content {
+    flex-direction: column;
+  }
+
+  .time-container {
+    flex-direction: column;
+  }
+
+  .time-container h2 {
+    font-size: 2rem;
+  }
+
+  .time-container div {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .settings-content input {
+    font-size: 0.8rem;
+  }
+
+  .settings-content button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .time-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .time-container div {
+    font-size: 2rem;
+  }
+  .settings{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 1rem;
+    left: 0.3rem;
+    margin-top: 40px;
+  }
+}

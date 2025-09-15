@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --primary: #005a76;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.title_container {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 400%;
+  animation: rainbow 5s infinite ease-in-out;
+  padding: 20px 0;
+  height: 80px;
+  text-shadow: 0 0 1rem black;
+}
+
+@keyframes rainbow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
+.title_container h1 {
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
+
+.button_container {
+  height: 20vh;
+  display: grid;
+  place-items: center;
+}
+.button_container button {
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: rgba(10, 239, 247, 0.473);
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 1px solid rgba(77, 216, 226, 0.938);
+}
+
+.button_container button:hover{
+animation: shadow 5s infinite ease-in;
+}
+
+@keyframes shadow {
+  0%{box-shadow: 0 0 1rem rgb(0, 9, 94);}
+  25%{box-shadow: 0 0 1rem white}
+  50%{box-shadow: 0 0 1rem rgb(0, 9, 94);}
+  75%{box-shadow: 0 0 1rem white}
+  100%{box-shadow: 0 0 1rem rgb(0, 9, 94);}
+}
+
+.colors_container {
+  height: calc(80vh - 80px);
+  display: grid;
+  grid-template-rows: 5fr 4fr 3fr 2fr;
+}
+
+#color1 {
+  background-color: red;
+}
+#color2 {
+  background-color: green;
+}
+#color3 {
+  background-color: yellow;
+}
+#color4 {
+  background-color: blue;
+}
+.colorBox:hover p {
+  display: inline-block;
+}
+.colorBox p {
+  background-color: rgb(223, 223, 223);
+  width: 150px;
+  padding: 10px;
+  text-align: end;
+  margin-top: 10px;
+  font-size: 24px;
+  display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .title_container h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 350px) {
+  .title_container h1 {
+    font-size: 16px;
+  }
+}

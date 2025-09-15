@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Generater</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c62a42293e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="box">
+          <h3>
+            <i class="fa-solid fa-trophy"></i>Score = <span id="score">0</span>
+          </h3>
+          <h1 id="question">Q. What is 8 multiply by 4 ?</h1>
+          <form id="questionform" onsubmit="checkanswer(event)">
+            <div class="answer">
+              <h2>Ans:</h2>
+              <input
+                type="number"
+                required
+                name="answer"
+                placeholder=""
+                id="inptans"
+              />
+            </div>
+            <button id="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
