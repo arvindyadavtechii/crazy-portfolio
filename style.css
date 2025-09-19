@@ -446,7 +446,7 @@ a{
     font-size: 4  0px;
   }
   .tech > .rr {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .sbtn {
     gap: 10px;
@@ -472,7 +472,7 @@ a{
   }
   
   .sk1 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
   }
   .pic > img {
