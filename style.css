@@ -446,35 +446,43 @@ a{
     font-size: 4  0px;
   }
   .tech > .rr {
-    font-size: 30px;
+    font-size: 4rem;
   }
   .sbtn {
     gap: 10px;
   }
   .sbtn > button {
-    padding: 8px 15px 8px 15px;
-    font-size: 12px;
+    padding: 15px 20px 15px 20px;
+    font-size: 15px;
   }
 
-  .about>h2>.abm{
+  .about{
+    margin-top: 2rem;
+  }
+
+  .about>.abm{
     font-size: 30px;
+    padding-bottom: 4rem;
   }
 
   .info > h3 {
-    font-size: 20px;
+    font-size: 25px;
+    padding: 0 20px 0 20px;
+
   }
   
   .sk1 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
   }
   .pic > img {
-    height: 40%;
-    width: 40%;
+    height: 25%;
+    width: 30%;
+    padding-left: 15px;
   }
 
   .mr {
-    font-size:3vw;
+    font-size:21vw;
     padding-left: 1rem;
   }
   .content{
@@ -535,7 +543,7 @@ a{
     padding-left: 20px;
   }
   .mr {
-    font-size: 25vw;
+    font-size: 23vw;
   }
   .contact{
     padding: 0 10px 0 10px;
